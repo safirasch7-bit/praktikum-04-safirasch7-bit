@@ -115,7 +115,7 @@ int riwayatMundur(DNode* tail, int* keluaran) {
     }
     return n;
 }
-
+//
 // SOAL 3
 bool hapusHalaman(DNode*& head, DNode*& tail, int nomor) {
     if (head == nullptr) {
