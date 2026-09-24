@@ -96,10 +96,13 @@ bool bukaHalaman(DNode*& head, DNode*& tail, int nomor) {
 
     if (head == nullptr) {
         head = tail = baru;
-    } else {
-        baru->prev = tail;
-        tail->next = baru;
-        tail = baru;
+        return true;
+    }
+
+    baru->prev = tail;
+    tail->next = baru;
+    tail = baru;
+    return true;
 }
 
 // SOAL 2
@@ -115,7 +118,7 @@ int riwayatMundur(DNode* tail, int* keluaran) {
     }
     return n;
 }
-//
+
 // SOAL 3
 bool hapusHalaman(DNode*& head, DNode*& tail, int nomor) {
     if (head == nullptr) {
@@ -144,7 +147,9 @@ bool hapusHalaman(DNode*& head, DNode*& tail, int nomor) {
         p->prev->next = p->next;
         p->next->prev = p->prev;
     }
+
     delete p;
+    return true;
 }
 
 // SOAL 4
