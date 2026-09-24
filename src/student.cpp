@@ -225,6 +225,7 @@ static void keadaanRiwayat(DNode* head, DNode* tail) {
     laporkanSalin("riwayatMundur", riwayatMundur(tail, penampung), penampung);
 }
 
+//
 static void keadaanTab(CNode* head) {
     int penampung[KAPASITAS];
     laporkanSalin("putaranTab", putaranTab(head, penampung), penampung);
